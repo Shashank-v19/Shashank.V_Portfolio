@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Shashank V</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css?v=3">
+    <link rel="icon" href="./images/logo.png">
+</head>
+<body>
+    <div class="cosmic-bg-glow"></div>
+    <div class="cosmic-ring"></div>
+
+    <header class="header">
+        <a href="./index.html" class="logo-container">
+            <img src="./images/logo.png" alt="Shashank V Logo" class="logo-img">
+            <span class="logo-text">Shashank V</span>
+        </a>
+        <nav class="nav-pill">
+            <a href="./index.html#home" class="nav-link">Home</a>
+            <a href="./index.html#about" class="nav-link">About</a>
+            <a href="./index.html#education" class="nav-link">Education</a>
+            <a href="./index.html#skills" class="nav-link">Skills</a>
+            <a href="./project.html" class="nav-link active">Projects</a>
+            <a href="./index.html#certifications" class="nav-link">Certifications</a>
+            <a href="./index.html#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="header-socials">
+            <a href="https://github.com" target="_blank" class="social-icon-btn" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/shashank-v9980" target="_blank" class="social-icon-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </header>
+
+    <section class="section" id="pro">
+        <h2 class="section-title"><i class="fas fa-project-diagram" style="color: var(--bright-blue);"></i> Featured Projects</h2>
+        <div class="flex-grid">
+
+            <!-- Project 1: Farm Management System -->
+            <div class="card flex-col-1 project-card" id="project1" style="margin-bottom: 1.5rem;">
+                <div>
+                    <h3 class="project-title">Farm Management System</h3>
+                    <p style="color: var(--bright-blue); font-weight: 500; font-size: 0.9rem; margin-bottom: 0.8rem;">
+                        Tech Stack: Python, Flask, MySQL (XAMPP), MVC Architecture, Flask-Login
+                    </p>
+                    <ul style="color: var(--secondary-text); font-size: 0.95rem; line-height: 1.8; margin-left: 1.2rem;">
+                        <li>Developed a full-stack web application for agro-product listings and farming activities using Flask and MySQL.</li>
+                        <li>Designed normalized relational database schemas for users, farmers, products, and categories, improving query efficiency and data retrieval.</li>
+                        <li>Implemented secure authentication and session management using Flask-Login with role-based access.</li>
+                        <li>Built RESTful CRUD modules for product management following MVC architecture for modularity and scalability.</li>
+                        <li>Reduced code coupling by separating models, views & controllers, improving maintainability and extensibility.</li>
+                    </ul>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Flask</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">XAMPP</span>
+                        <span class="tech-badge">MVC</span>
+                        <span class="tech-badge">Flask-Login</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Smart Farming for Wild Threat Detection -->
+            <div class="card flex-col-1 project-card" id="project2" style="margin-bottom: 1.5rem;">
+                <div>
+                    <h3 class="project-title">Smart Farming for Wild Threat Detection</h3>
+                    <p style="color: var(--bright-blue); font-weight: 500; font-size: 0.9rem; margin-bottom: 0.8rem;">
+                        Tech Stack: Python, OpenCV, YOLO (Ultralytics), Pygame, Twilio API, CNN Models, Video Streaming
+                    </p>
+                    <ul style="color: var(--secondary-text); font-size: 0.95rem; line-height: 1.8; margin-left: 1.2rem;">
+                        <li>Built a real-time wildlife detection system using YOLOv11 / YOLOv10 and OpenCV for identifying animals from live video streams.</li>
+                        <li>Designed a dual-model pipeline to suppress human detections, significantly reducing false alerts and improving data accuracy.</li>
+                        <li>Implemented an automated SMS alert system using Twilio API and local audio alarms for instant threat notification in fields.</li>
+                        <li>Optimized inference & video processing pipeline for real-time performance on webcam and low-cost camera feeds.</li>
+                        <li>Enabled practical rural deployment supporting continuous monitoring.</li>
+                    </ul>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">OpenCV</span>
+                        <span class="tech-badge">YOLOv11</span>
+                        <span class="tech-badge">Twilio API</span>
+                        <span class="tech-badge">Pygame</span>
+                        <span class="tech-badge">CNN Models</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: AI-Driven Secure Image Encryption -->
+            <div class="card flex-col-1 project-card" id="project3">
+                <div>
+                    <h3 class="project-title">AI-Driven Secure Image Encryption using Chaos & Deep Learning</h3>
+                    <p style="color: var(--bright-blue); font-weight: 500; font-size: 0.9rem; margin-bottom: 0.8rem;">
+                        Tech Stack: Python, TensorFlow, OpenCV, Google Colab, VS Code
+                    </p>
+                    <ul style="color: var(--secondary-text); font-size: 0.95rem; line-height: 1.8; margin-left: 1.2rem;">
+                        <li>Developed a hybrid AI–cryptography system integrating CNN and chaos-based (chaotic key generation) image encryption for secure transmission.</li>
+                        <li>Implemented dynamic cryptographic key generation using deep learning and logistic chaotic maps.</li>
+                        <li>Achieved high security performance with Entropy ≈ 7.89 and NPCR > 99% against statistical attacks.</li>
+                        <li>Built and tested the complete pipeline using Python, TensorFlow, OpenCV, Google Colab, and VS Code.</li>
+                    </ul>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">TensorFlow</span>
+                        <span class="tech-badge">OpenCV</span>
+                        <span class="tech-badge">Google Colab</span>
+                        <span class="tech-badge">VS Code</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Made with ❤️ by <strong>Shashank V</strong> © 2026 All Rights Reserved</p>
+    </footer>
+</body>
+</html>
