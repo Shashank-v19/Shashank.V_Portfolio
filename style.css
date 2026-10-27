@@ -563,6 +563,98 @@ body {
   font-weight: 500;
 }
 
+/* Project Detail Page — Header with title + action links */
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.project-actions .btn {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+}
+
+/* Project Detail Page — Body content */
+.project-body {
+  margin-top: 0.5rem;
+}
+
+.project-techline {
+  color: var(--bright-blue);
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.project-overview {
+  color: var(--secondary-text);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.project-overview p {
+  margin-bottom: 1rem;
+}
+
+.project-overview ul {
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Project Gallery Grid */
+.project-gallery-title {
+  color: var(--bright-blue);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.project-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.project-gallery-item {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Index page — small icon links (Git/Live) on project cards */
+.project-icon-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 5px;
+}
+
+.project-icon-link {
+  color: var(--secondary-text);
+  font-size: 1.1rem;
+  transition: var(--transition-fast);
+  text-decoration: none;
+}
+
+.project-icon-link:hover {
+  color: var(--bright-blue);
+}
+
 /* Contact Details & Links */
 .contact-item {
   display: flex;
@@ -590,7 +682,17 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--bright-blue);
+  flex-shrink: 0;
 }
+
+/* Clickable Card Links */
+a.card {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+
 
 /* Footer */
 .footer {

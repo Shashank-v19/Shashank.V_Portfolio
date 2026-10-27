@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Shashank V</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./style.css?v=3">
+    <link rel="stylesheet" href="./style.css?v=4">
     <link rel="icon" href="./images/logo.png">
 </head>
+
 <body>
     <div class="cosmic-bg-glow"></div>
     <div class="cosmic-ring"></div>
@@ -30,29 +33,72 @@
             <a href="./index.html#contact" class="nav-link">Contact</a>
         </nav>
         <div class="header-socials">
-            <a href="https://github.com" target="_blank" class="social-icon-btn" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/shashank-v9980" target="_blank" class="social-icon-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com" target="_blank" class="social-icon-btn" title="GitHub"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/shashank-v9980" target="_blank" class="social-icon-btn"
+                title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
         </div>
     </header>
 
     <section class="section" id="pro">
-        <h2 class="section-title"><i class="fas fa-project-diagram" style="color: var(--bright-blue);"></i> Featured Projects</h2>
+        <h2 class="section-title"><i class="fas fa-project-diagram" style="color: var(--bright-blue);"></i> Featured
+            Projects</h2>
         <div class="flex-grid">
 
             <!-- Project 1: Farm Management System -->
             <div class="card flex-col-1 project-card" id="project1" style="margin-bottom: 1.5rem;">
-                <div>
+                <div class="project-header">
                     <h3 class="project-title">Farm Management System</h3>
-                    <p style="color: var(--bright-blue); font-weight: 500; font-size: 0.9rem; margin-bottom: 0.8rem;">
-                        Tech Stack: Python, Flask, MySQL (XAMPP), MVC Architecture, Flask-Login
+                    <div class="project-actions">
+                        <a href="#" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> Git</a>
+                        <a href="#" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i>
+                            Live</a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <p class="project-techline">Tech Stack: Python, Flask, MySQL (XAMPP), MVC Architecture, Flask-Login
                     </p>
-                    <ul style="color: var(--secondary-text); font-size: 0.95rem; line-height: 1.8; margin-left: 1.2rem;">
-                        <li>Developed a full-stack web application for agro-product listings and farming activities using Flask and MySQL.</li>
-                        <li>Designed normalized relational database schemas for users, farmers, products, and categories, improving query efficiency and data retrieval.</li>
-                        <li>Implemented secure authentication and session management using Flask-Login with role-based access.</li>
-                        <li>Built RESTful CRUD modules for product management following MVC architecture for modularity and scalability.</li>
-                        <li>Reduced code coupling by separating models, views & controllers, improving maintainability and extensibility.</li>
-                    </ul>
+                    <div class="project-overview">
+                        <p>
+                            <strong>Project Overview:</strong> A comprehensive full-stack web application tailored for
+                            the agricultural sector. The platform bridges the gap between farmers and consumers by
+                            providing a centralized marketplace for agro-product listings, streamlined farming activity
+                            management, and secure transactions.
+                        </p>
+                        <p><strong>Key Features & Implementation:</strong></p>
+                        <ul>
+                            <li><strong>Scalable Architecture:</strong> Architected the backend using Flask and MySQL,
+                                strictly adhering to the MVC design pattern to separate concerns and ensure highly
+                                maintainable, extensible code.</li>
+                            <li><strong>Secure Access Management:</strong> Integrated Flask-Login to provide robust,
+                                role-based authentication (Admin vs. Farmer vs. Consumer) and secure session
+                                management.</li>
+                            <li><strong>Database Optimization:</strong> Engineered normalized relational database
+                                schemas
+                                for users, products, and categories, drastically improving query execution times and
+                                data
+                                retrieval efficiency.</li>
+                            <li><strong>Full CRUD Capabilities:</strong> Developed comprehensive RESTful APIs to handle
+                                dynamic product inventory management and real-time listings updates.</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin: 1.5rem 0;">
+                        <p class="project-gallery-title"><i class="fas fa-images"></i> Project Gallery</p>
+                        <div class="project-gallery-grid">
+                            <div class="project-gallery-item">
+                                <p style="color: var(--secondary-text); font-size: 0.85rem; margin-bottom: 0.5rem;">[
+                                    Upload / Add Image 1 Here ]</p>
+                                <!-- <img src="./images/project1-img1.jpg" alt="Farm Management - Dashboard"> -->
+                            </div>
+                            <div class="project-gallery-item">
+                                <!-- <img src="./images/project1-img2.jpg" alt="Farm Management - Products"> -->
+                            </div>
+                            <div class="project-gallery-item">
+                                <!-- <img src="./images/project1-img3.jpg" alt="Farm Management - Login"> -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div style="margin-top: 1rem;">
                     <div class="tech-stack">
@@ -68,18 +114,58 @@
 
             <!-- Project 2: Smart Farming for Wild Threat Detection -->
             <div class="card flex-col-1 project-card" id="project2" style="margin-bottom: 1.5rem;">
-                <div>
+                <div class="project-header">
                     <h3 class="project-title">Smart Farming for Wild Threat Detection</h3>
-                    <p style="color: var(--bright-blue); font-weight: 500; font-size: 0.9rem; margin-bottom: 0.8rem;">
-                        Tech Stack: Python, OpenCV, YOLO (Ultralytics), Pygame, Twilio API, CNN Models, Video Streaming
-                    </p>
-                    <ul style="color: var(--secondary-text); font-size: 0.95rem; line-height: 1.8; margin-left: 1.2rem;">
-                        <li>Built a real-time wildlife detection system using YOLOv11 / YOLOv10 and OpenCV for identifying animals from live video streams.</li>
-                        <li>Designed a dual-model pipeline to suppress human detections, significantly reducing false alerts and improving data accuracy.</li>
-                        <li>Implemented an automated SMS alert system using Twilio API and local audio alarms for instant threat notification in fields.</li>
-                        <li>Optimized inference & video processing pipeline for real-time performance on webcam and low-cost camera feeds.</li>
-                        <li>Enabled practical rural deployment supporting continuous monitoring.</li>
-                    </ul>
+                    <div class="project-actions">
+                        <a href="#" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> Git</a>
+                        <a href="#" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i>
+                            Live</a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <p class="project-techline">Tech Stack: Python, OpenCV, YOLO (Ultralytics), Pygame, Twilio API, CNN
+                        Models, Video Streaming</p>
+                    <div class="project-overview">
+                        <p>
+                            <strong>Project Overview:</strong> A robust, real-time computer vision system designed to
+                            protect farmlands from wild animal intrusions. Utilizing YOLO object detection and OpenCV,
+                            the system continuously monitors video feeds to identify threats, leveraging a smart
+                            dual-model architecture that prevents false alarms by explicitly recognizing and ignoring
+                            humans.
+                        </p>
+                        <p><strong>Key Features & Implementation:</strong></p>
+                        <ul>
+                            <li><strong>Real-Time Threat Detection:</strong> Leveraged YOLOv11/YOLOv10 models to
+                                accurately detect and classify various wildlife from live camera streams with minimal
+                                latency.</li>
+                            <li><strong>Dual-Model Pipeline:</strong> Integrated a separate human-detection filter to
+                                suppress false positives, ensuring farmers are only alerted when an actual animal threat
+                                is present.</li>
+                            <li><strong>Automated Alert System:</strong> Engineered a multi-channel notification
+                                mechanism using the Twilio API for immediate SMS alerts, paired with Pygame for local
+                                audio alarms to drive animals away.</li>
+                            <li><strong>Optimized for Edge Deployment:</strong> Streamlined inference and video
+                                processing pipelines to run efficiently on low-cost hardware and standard webcams,
+                                making it highly practical for rural agricultural deployment.</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin: 1.5rem 0;">
+                        <p class="project-gallery-title"><i class="fas fa-images"></i> Project Gallery</p>
+                        <div class="project-gallery-grid">
+                            <div class="project-gallery-item">
+                                <p style="color: var(--secondary-text); font-size: 0.85rem; margin-bottom: 0.5rem;">
+                                    this shows given action</p>
+                                <img src="./images/secure image 1.png" alt="Smart Farming - Detection Output">
+                            </div>
+                            <div class="project-gallery-item">
+                                <!-- <img src="./images/project2-img2.jpg" alt="Smart Farming - Alert System"> -->
+                            </div>
+                            <div class="project-gallery-item">
+                                <!-- <img src="./images/project2-img3.jpg" alt="Smart Farming - Architecture"> -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div style="margin-top: 1rem;">
                     <div class="tech-stack">
@@ -94,18 +180,54 @@
             </div>
 
             <!-- Project 3: AI-Driven Secure Image Encryption -->
-            <div class="card flex-col-1 project-card" id="project3">
-                <div>
-                    <h3 class="project-title">AI-Driven Secure Image Encryption using Chaos & Deep Learning</h3>
-                    <p style="color: var(--bright-blue); font-weight: 500; font-size: 0.9rem; margin-bottom: 0.8rem;">
-                        Tech Stack: Python, TensorFlow, OpenCV, Google Colab, VS Code
-                    </p>
-                    <ul style="color: var(--secondary-text); font-size: 0.95rem; line-height: 1.8; margin-left: 1.2rem;">
-                        <li>Developed a hybrid AI–cryptography system integrating CNN and chaos-based (chaotic key generation) image encryption for secure transmission.</li>
-                        <li>Implemented dynamic cryptographic key generation using deep learning and logistic chaotic maps.</li>
-                        <li>Achieved high security performance with Entropy ≈ 7.89 and NPCR > 99% against statistical attacks.</li>
-                        <li>Built and tested the complete pipeline using Python, TensorFlow, OpenCV, Google Colab, and VS Code.</li>
-                    </ul>
+            <div class="card flex-col-1 project-card" id="project3" style="margin-bottom: 1.5rem;">
+                <div class="project-header">
+                    <h3 class="project-title">Secure Image Encryption using Chaos & Deep Learning</h3>
+                    <div class="project-actions">
+                        <a href="https://github.com/Shashank-v19/Sentinel-crypto" target="_blank"
+                            class="btn btn-secondary"><i class="fab fa-github"></i> Git</a>
+                        <a href="https://sentinel-crypto-psxz.vercel.app/" target="_blank" class="btn btn-primary"><i
+                                class="fas fa-external-link-alt"></i> Live</a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <p class="project-techline">Tech Stack: Python, TensorFlow, OpenCV, Google Colab, VS Code</p>
+                    <div class="project-overview">
+                        <p>
+                            <strong>Project Overview:</strong> An advanced hybrid security system that merges Artificial
+                            Intelligence (CNNs) with Chaos Theory to ensure the secure transmission of image data. The
+                            system addresses vulnerabilities in traditional encryption by utilizing deep learning for
+                            feature extraction and chaotic maps for highly unpredictable, dynamic key generation.
+                        </p>
+                        <p><strong>Key Features & Implementation:</strong></p>
+                        <ul>
+                            <li><strong>Dynamic Key Generation:</strong> Employs logistic chaotic maps and deep learning
+                                to produce unique cryptographic keys for every session, effectively neutralizing
+                                key-reuse attacks.</li>
+                            <li><strong>Dual-Layer Security:</strong> Implements robust confusion and diffusion phases
+                                to completely scramble the original image structure and pixel values.</li>
+                            <li><strong>High Security Standards:</strong> Rigorously evaluated against statistical and
+                                differential attacks, achieving near-ideal Information Entropy (≈ 7.89) and a Number of
+                                Pixels Change Rate (NPCR) exceeding 99%.</li>
+                            <li><strong>End-to-End Pipeline:</strong> Built, trained, and tested the complete
+                                AI-cryptography pipeline using Python, TensorFlow, and OpenCV.</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin: 1.5rem 0;">
+                        <p class="project-gallery-title"><i class="fas fa-images"></i> Project Gallery</p>
+                        <div class="project-gallery-grid">
+                            <div class="project-gallery-item">
+                                <img src="./images/secure image 1.png" alt="Secure Image Encryption - Output">
+                            </div>
+                            <div class="project-gallery-item">
+                                <!-- <img src="./images/project3-img2.jpg" alt="Secure Image Encryption - Pipeline"> -->
+                            </div>
+                            <div class="project-gallery-item">
+                                <!-- <img src="./images/project3-img3.jpg" alt="Secure Image Encryption - Metrics"> -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div style="margin-top: 1rem;">
                     <div class="tech-stack">
@@ -118,6 +240,68 @@
                 </div>
             </div>
 
+            <!-- Project 4: SmartShop E-Commerce -->
+            <div class="card flex-col-1 project-card" id="project4">
+                <div class="project-header">
+                    <h3 class="project-title">SmartShop: Enterprise E-Commerce Platform</h3>
+                    <div class="project-actions">
+                        <a href="#" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> Git</a>
+                        <a href="#" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i>
+                            Live</a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <p class="project-techline">Tech Stack: Java 21, Jakarta EE 10, JSP, Servlets, MySQL, Maven</p>
+                    <div class="project-overview">
+                        <p>
+                            <strong>Project Overview:</strong> A high-performance, full-stack e-commerce web application
+                            engineered for maximum conversion and scalability. Built on modern Java EE architecture, it
+                            provides a seamless Direct-to-Consumer (D2C) and marketplace experience with robust ACID
+                            database transaction guarantees.
+                        </p>
+                        <p><strong>Key Features & Implementation:</strong></p>
+                        <ul>
+                            <li><strong>Multi-Tier Architecture:</strong> Strictly separates presentation, business
+                                logic, and persistence layers using Jakarta Servlets (Controllers), DAOs, and JSP/JSTL
+                                templates for clean MVC design.</li>
+                            <li><strong>Atomic Transaction Integrity:</strong> Implemented robust ACID safeguards and
+                                conditional MySQL queries to completely prevent inventory overselling during
+                                high-concurrency flash sales.</li>
+                            <li><strong>Frictionless User Experience:</strong> Features asynchronous Fetch API calls for
+                                zero-reload cart steppers and real-time UI updates, drastically reducing cart
+                                abandonment.</li>
+                            <li><strong>Enterprise-Grade Security:</strong> Utilizes an <code>AdminFilter</code> for
+                                rigorous RBAC enforcement and secures user credentials with PBKDF2 HMAC-SHA256
+                                cryptography.</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin: 1.5rem 0;">
+                        <p class="project-gallery-title"><i class="fas fa-images"></i> Project Gallery</p>
+                        <div class="project-gallery-grid">
+                            <div class="project-gallery-item">
+                                <!-- <img src="./images/project4-img1.jpg" alt="SmartShop - Home Page"> -->
+                            </div>
+                            <div class="project-gallery-item">
+                                <!-- <img src="./images/project4-img2.jpg" alt="SmartShop - Cart"> -->
+                            </div>
+                            <div class="project-gallery-item">
+                                <!-- <img src="./images/project4-img3.jpg" alt="SmartShop - Admin Panel"> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <div class="tech-stack">
+                        <span class="tech-badge">Java 21</span>
+                        <span class="tech-badge">Jakarta EE</span>
+                        <span class="tech-badge">JSP & Servlets</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">Maven</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -125,4 +309,5 @@
         <p>Made with ❤️ by <strong>Shashank V</strong> © 2026 All Rights Reserved</p>
     </footer>
 </body>
+
 </html>
